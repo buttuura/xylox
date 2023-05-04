@@ -1,0 +1,241 @@
+.header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    background-color: rgb(11, 6, 15);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-block-color: rgb(232, 227, 227);
+    z-index: 1;
+
+}
+@media (max-width: 600px){
+    .header{
+        display:flex;
+    }
+    .header .nav{
+        flex-direction: column;
+    }
+    body{
+        margin: 0;
+    padding-top: 180px;
+    padding-left:0px ;
+    padding-right: 0px;
+    background-color: rgb(151, 104, 179);
+    }
+}
+@media (max-width:600px){
+        .right{flex-wrap: wrap;
+        }
+    }
+
+.search-bar{
+    flex:1;
+    height: 36px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 0;
+    min-width: 100px;
+
+}
+.search-bar::placeholder{
+    font-family: arial,Roboto;
+    font-size: 16qpx;
+
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.ut1{
+    height: 50px;
+    width: 150px;
+   
+}
+.middle{
+    flex:1;
+    margin-left: 10px;
+    margin-right: 20px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    z-index: 1px;
+    
+
+}
+.ut3{
+    height: 25px;
+    width: 60px;
+    margin-top: 4px;
+}
+.button1{
+    height: 40px;
+    width: 60px;
+    border-style: solid;
+    border-color: gray;
+    background-color:rgb(235,235,235);
+    border-width:1px;
+    border-color:gray;
+    margin: -1px;
+    margin-right: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    z-index: 200;
+    margin-top:-1.px;
+
+}
+.tooltip{
+    margin-left: 30px;
+}
+.button1 .tooltip{
+    position: relative;
+    background-color: gray;
+    color:rgb(232, 224, 224);
+    padding-left: 4px;
+    padding-right: 18;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -4px;
+    opacity:0;
+}
+.button1:hover .tooltip{
+    opacity: 1;
+}
+.ut4{
+    height: 30px;
+    margin-bottom: px;
+}
+.right{
+width:170px;
+align-items: center;
+display:flex;
+justify-content:space-between;
+margin-right: 20px;
+flex-shrink: none;
+}
+
+.ut5{
+    height: 20px;
+}
+.ut6{
+    height: 24px;
+}
+.ut7{
+    height: 24px;
+}
+.ut7x{
+    position: relative;
+}
+
+.ut8{
+    height: 32px;
+    border-radius: 16px;
+}
+.ul{display: flex;
+   
+}
+ .menu-bar{
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  flex-shrink: 0;
+ }
+ .menu-bar ul{
+    float: left;
+ }
+ .menu-bar ul li{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding:5px;
+  margin:-5px 10px;
+  margin-left: 0px;
+  text-decoration: none;
+  font-size: 17px;
+  list-style: none;
+  z-index: 200;
+ }
+ .menu-bar ul li a{
+     text-decoration: none;
+     color:rgb(245, 251, 245);
+ }
+ .menu-bar ul li:hover{
+     background-color: orange;
+     border-radius: 3px;
+    }
+ .menu-bar .icon {
+        display: none;
+      }
+
+ .sub-menu1{
+     display: none;
+ }
+ .menu-bar ul li:hover .sub-menu1{
+     display: flex;
+     position: absolute;
+     background:red;
+     border-radius: 1px;
+     justify-self: left;
+     width: 100px;
+     margin-top: 7px;
+     height: 120px;
+ }
+ .sub-menu1 ul li{
+    float: none;
+
+ }
+ .menu-bar ul li:hover .sub-menu1 ul{
+     display: block;
+     margin: 10px;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li{
+     width: 50px;
+     margin-left:-25px;
+     border-bottom: 1px dotted #ffff;
+     text-align: left;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li:hover{
+     background-color:transparent;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li:last-child{
+     border-bottom: none;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li a:hover{
+     padding-left: 30px;
+     padding-top: 15PX;
+     padding-bottom: 15PX;
+     padding-right: 30PX;
+     margin-left:-4px;
+     position: relative;
+     top: 0;
+     left: 0;
+ }
+
+
+ .home{
+    height: 15px;
+ }
+ .ugadama{
+    font-family: impact;
+    color: yellow;
+ }
+ .humbager-menu{
+    height: 20px;
+ }
